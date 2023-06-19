@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+   
+
+        <h1 style="margin-left: 20px;">
+            <b>
+                <br>
+
+                Select the values for predict the Disease
+                <br><br>
+            </b>
+        </h1>
+
+
+
+
+<div class="row">
+
+  <div class="col-lg-3"> 
+    </div>
+    <div class="col-lg-6">
+    <form action="{{url_for('home')}}" method="post">
+      <label for="exampleInputEmail1 " class="form-label">INDEX</label>
+      <input type="text" class="form-control"  name="s0" id="exampleInputEmail1" aria-describedby="emailHelp">
+     
+      <label for="exampleInputEmail1 " class="form-label">TV</label>
+      <input type="text" class="form-control"  name="s1" id="exampleInputEmail1" aria-describedby="emailHelp">
+     
+
+<br>
+<label for="exampleInputEmail1 "  class="form-label">Radio</label>
+<input type="text" class="form-control" name="s2" id="exampleInputEmail1" aria-describedby="emailHelp">
+<br>
+<label for="exampleInputEmail1 "  class="form-label">Newspaper</label>
+<input type="text" class="form-control" name="s3" id="exampleInputEmail1" aria-describedby="emailHelp">
+</div>
+</div>
+        
+<br>
+
+<button style=" margin-top: 20px; margin-left: 670px;" type="submit" name="submit" value="predict" class="btn btn-primary">Submit</button>
+
+</form>
+</body>
+</html>
